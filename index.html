@@ -13,6 +13,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   background-color: rgb(38, 38, 38);
+  font-weight: 300;
 }
 .content{
   width: 600px;
@@ -23,6 +24,10 @@ body {
 .bull img {
   width: 300px;
   float:left
+}
+
+.branding {
+    height: 300px;
 }
 
 .branding h1 {
@@ -82,6 +87,27 @@ h2 {
   height: 100%;
   left: 40px;
 }
+
+.buttons {
+  text-align: center;
+  margin: auto;
+}
+
+
+button {
+  border: none;
+  background-color: gold;
+  height: 30px;
+  font-size: 18px;
+  padding: 10px 30px 30px 30px;
+  margin-right: 20px;
+  transition: ease 0.3s;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
   </style>
 
 </head>
@@ -94,10 +120,11 @@ h2 {
 
   <div class="content">
 
-    <div class="branding animated fadeInUpBig">
+    <div class="branding animated fadeInUp">
 
       <div class="bull">
         <img src="img/bullhacks-bull.png" alt="" />
+
       </div>
 
       <div class="logo-text">
@@ -106,7 +133,15 @@ h2 {
         <h2>Coming to Birmingham in 2017</h2>
       </div>
 
+
+
     </div>
+
+    <div class="buttons animated fadeInUpBig">
+      <a href="#"><button>Register your interest</button></a>
+      <a href="mailto:sponsor@bullhacks.io"><button>Apply to sponsor</button></a>
+    </div>
+
 
   </div>
 
