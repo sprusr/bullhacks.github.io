@@ -24,9 +24,9 @@ section {
 }
 
 nav {
+  margin-top: -150px;
   text-align: left;
   transform: rotate(-5deg);
-  margin-top: 50px;
 }
 
 nav li {
@@ -36,36 +36,27 @@ nav li {
 
 
 #hero {
-  position: absolute;
   background-image: url(img/bcu-curzon.png);
   background-position: center;
-  height: 1000px;
+  height: 820px;
   width: 100%;
-  z-index: 0;
+  overflow: hidden;
 }
 
-#hero::before {
+.shard#top {
   content: ' ';
   background-color: white;
   width: 120%;
   height: 200px;
-  position: absolute;
-  top: -100px;
-  left: -100px;
-  transform: rotate(-5deg);
-  z-index: -100;
+  transform: translate(-100px, -100px) rotate(-5deg);
 }
 
-#hero::after {
+.shard#bottom {
   content: ' ';
   background-color: white;
   width: 120%;
   height: 200px;
-  position: absolute;
-  left: -100px;
-  top: 900px;
-  transform: rotate(3deg);
-  z-index: -100;
+  transform: translate(-100px, 50px) rotate(3deg);
 }
 
 .container {
@@ -86,25 +77,29 @@ nav li {
 }
  button {
    font-size: 30px;
-   padding: 15px 60px;
-   text-transform: uppercase;
-   background: none;
-   border: 4px solid transparent;
-   transition: ease 0.5s;
- }
-
- button::before{
-   content: '';
    width: 220px;
    height: 70px;
-   background-color: white;
-   position: absolute;
-   transform: translate(-30%, -25%) rotate(-5deg);
-   z-index: -100;
+   text-transform: uppercase;
+   background: white;
+   transition: ease 0.5s;
+   border: none;
+   padding: 0;
+ }
+
+.txt {
+  margin-top: 15px;
+ }
+
+ .btn{
+   content: ' ';
+   width: 220px;
+   height: 60px;
+  border: 4px solid black;
+  transform: translate(0px, -90px) rotate(-4deg);
  }
 
  button:hover {
-  border: 4px solid black;
+
   cursor: pointer;
   margin-top: -8px;
   transition: ease 0.2s;
@@ -116,8 +111,6 @@ h1 {
 }
 
  #faq {
-   position: absolute;
-   top: 920px;
    padding-bottom: 100px;
  }
 
@@ -142,3 +135,14 @@ h1 {
    content: '';
    transform: rotate(-5deg);
  }
+
+ #map {
+   overflow: hidden;
+   height: 800px;
+   width: 100%;
+}
+
+#location {
+  height: 800px;
+  width: 100%;
+}
