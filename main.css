@@ -41,6 +41,7 @@ nav li {
   height: 820px;
   width: 100%;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .shard#top {
