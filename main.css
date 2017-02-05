@@ -34,6 +34,9 @@ nav li {
   margin-right: 20px;
 }
 
+.smalllink {
+  color: #ea473b;
+}
 
 #hero {
   background-image: url(img/bcu-curzon.png);
@@ -135,6 +138,7 @@ h1 {
    position: absolute;
    content: '';
    transform: rotate(-5deg);
+   z-index: -100;
  }
 
  #map {
