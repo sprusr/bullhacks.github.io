@@ -1,0 +1,149 @@
+
+body {
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+margin: 0px;
+padding: 0px;
+top: 0px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+nav {
+  margin-top: -150px;
+  text-align: left;
+  transform: rotate(-5deg);
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+
+#hero {
+  background-image: url(img/bcu-curzon.png);
+  background-position: center;
+  height: 820px;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.shard#top {
+  content: ' ';
+  background-color: white;
+  width: 120%;
+  height: 200px;
+  transform: translate(-100px, -100px) rotate(-5deg);
+}
+
+.shard#bottom {
+  content: ' ';
+  background-color: white;
+  width: 120%;
+  height: 200px;
+  transform: translate(-100px, 50px) rotate(3deg);
+}
+
+.container {
+  margin: 170px auto 0 auto;
+}
+
+#logo img {
+  width: 600px;
+}
+
+#hero p {
+  font-size: 40px;
+  line-height: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+ button {
+   font-size: 30px;
+   width: 220px;
+   height: 70px;
+   text-transform: uppercase;
+   background: white;
+   transition: ease 0.5s;
+   border: none;
+   padding: 0;
+ }
+
+.txt {
+  margin-top: 15px;
+ }
+
+ .btn{
+   content: ' ';
+   width: 220px;
+   height: 60px;
+  border: 4px solid black;
+  transform: translate(0px, -90px) rotate(-4deg);
+ }
+
+ button:hover {
+
+  cursor: pointer;
+  margin-top: -8px;
+  transition: ease 0.2s;
+ }
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 0px;
+}
+
+ #faq {
+   padding-bottom: 100px;
+ }
+
+.questions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+ .question {
+   width: 350px;
+   margin-bottom: 30px;
+ }
+
+ .questionContents {
+      padding: 20px;
+ }
+
+ .questionBorder {
+   border: 5px solid blue;
+   position: absolute;
+   content: '';
+   transform: rotate(-5deg);
+ }
+
+ #map {
+   overflow: hidden;
+   height: 800px;
+   width: 100%;
+}
+
+#location {
+  height: 800px;
+  width: 100%;
+}
