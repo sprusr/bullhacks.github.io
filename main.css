@@ -1,15 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
-font-family: 'Open Sans', sans-serif;
-font-weight: 300;
-margin: 0px;
-padding: 0px;
-top: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
 }
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -79,72 +82,85 @@ nav li {
 .bold {
   font-weight: bold;
 }
- button {
-   font-size: 30px;
-   width: 220px;
-   height: 70px;
-   text-transform: uppercase;
-   background: white;
-   transition: ease 0.5s;
-   border: none;
-   padding: 0;
- }
+
+.button {
+  display: inline-block;
+  font-size: 30px;
+  width: 220px;
+  height: 70px;
+  text-transform: uppercase;
+  background: white;
+  transition: ease 0.5s;
+  border: none;
+  padding: 0;
+  position: relative;
+  font-weight: 400;
+}
 
 .txt {
-  margin-top: 15px;
- }
+  position: absolute;
+  line-height: 70px;
+  width: 220px;
+  height: 70px;
+}
 
- .btn{
-   content: ' ';
-   width: 220px;
-   height: 60px;
+.btn {
+  position: absolute;
+  content: ' ';
+  width: 220px;
+  height: 70px;
   border: 4px solid black;
-  transform: translate(0px, -90px) rotate(-4deg);
- }
+  transform: rotate(-4deg);
+}
 
- button:hover {
-
+.button:hover {
   cursor: pointer;
   margin-top: -8px;
   transition: ease 0.2s;
- }
+}
 
 h1 {
   font-size: 38px;
   margin-bottom: 0px;
 }
 
- #faq {
-   padding-bottom: 100px;
- }
+#faq {
+  padding-bottom: 100px;
+}
 
 .questions {
+  padding-top: 40px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
- .question {
-   width: 350px;
-   margin-bottom: 30px;
- }
+.question {
+  width: 350px;
+  margin-bottom: 30px;
+  position: relative;
+}
 
- .questionContents {
-      padding: 20px;
- }
+.questionContents {
+  padding: 20px;
+}
 
- .questionBorder {
-   border: 5px solid blue;
-   position: absolute;
-   content: '';
-   transform: rotate(-5deg);
-   z-index: -100;
- }
+.questionBorder {
+  border: 5px solid #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transform: rotate(-5deg);
+  z-index: -100;
+}
 
- #map {
-   overflow: hidden;
-   height: 800px;
-   width: 100%;
+#map {
+  overflow: hidden;
+  height: 800px;
+  width: 100%;
 }
 
 #location {
